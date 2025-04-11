@@ -1,0 +1,181 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5A4A50; /* Чуть ярче, чем шапка */
+}
+
+/* Обёртка страницы */
+.page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+header {
+    background-color: #493C40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Навигация */
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #493C40;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Контент */
+.container {
+    width: 100%;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Баннер */
+.banner {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slider .prev,
+.slider .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.slider .prev {
+    left: 10px;
+}
+
+.slider .next {
+    right: 10px;
+}
+
+/* Преимущества и новости */
+.advantages,
+.news {
+    margin-top: 20px;
+}
+
+.advantages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.advantages li {
+    background: #e0e0e0;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Календарь */
+.calendar-wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.calendar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* День (если используется отдельно) */
+.day {
+    width: 100px;
+    height: 100px;
+    background: #493C40;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Подвал */
+footer {
+    background-color: #493C40;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-inner {
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    margin: 4px 0;
+}
+
